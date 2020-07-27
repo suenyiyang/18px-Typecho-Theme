@@ -1,0 +1,11 @@
+#canvas {
+  background-color: #000;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+footer,
+footer * {
+  color: #fff;
+}

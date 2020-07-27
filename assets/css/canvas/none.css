@@ -1,0 +1,25 @@
+:root {
+  --box-shadow-dark: rgba(0, 0, 0, 0.1);
+}
+body {
+  background-color: #eee;
+}
+#canvas {
+  display: none;
+}
+#header {
+  box-shadow: 0 3px 5px var(--box-shadow-dark);
+}
+.post {
+  box-shadow: 0 5px 10px var(--box-shadow-dark);
+}
+.widget {
+  box-shadow: 0 5px 10px var(--box-shadow-dark);
+}
+footer,
+footer * {
+  color: #444;
+}
+.link {
+  box-shadow: 0 5px 10px var(--box-shadow-dark);
+}
