@@ -1,5 +1,3 @@
-[toc]
-
 # 18px-Typecho-Theme
 
 ![screenshot](https://shaun.oss-cn-beijing.aliyuncs.com/typora/202007/27/221114-560343.png/watermark)
@@ -16,7 +14,7 @@
 
 # 0x02 使用方法
 
-1. 下载realease版本（[传送门]()）。
+1. 下载realease版本（[传送门](https://github.com/shaunyoung-11/18px-Typecho-Theme/releases/tag/v1.0.0)）。
 2. 在本地解压，并将文件夹命名为 **18px** 。（请严格按照规范命名，主题中有一处使用到包含主题文件夹名称的路径，命名不规范可能导致静态资源加载失败）
 3. 将整个文件夹上传到网站根目录下的 `/usr/themes/` 目录。
 4. 在后台 **外观** 中切换到 *18px* 主题。
