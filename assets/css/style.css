@@ -152,6 +152,7 @@ textarea {
 #header .row {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 #logo {
   color: var(--theme-color);
@@ -488,7 +489,7 @@ textarea {
   background: #fff;
 }
 .comment-list li.comment-by-author {
-  background: #fff9e8;
+  
 }
 .comment-list li .comment-reply {
   text-align: right;
@@ -503,9 +504,24 @@ textarea {
   margin-bottom: 3px;
   color: #444;
 }
+.comment-by-author .comment-author::after{
+    content: "作者";
+    padding: 0 3px;
+    border-radius: 18px;
+    border: 1px solid #444;
+    font-size: 10px;
+    background-color: #444;
+    color: #fff;
+}
 .comment-author .avatar {
   float: left;
   margin-right: 10px;
+  border-radius: 100%;
+  transform: rotate(0);
+  transition: all ease-in-out 0.4s;
+}
+.comment-author .avatar:hover {
+    transform: rotate(540deg);
 }
 .comment-author cite {
   font-weight: bold;
@@ -559,6 +575,10 @@ textarea {
   transition: all ease-out 0.2s 0.9s;
 }
 .widget-list {
+  list-style: none;
+  padding: 0;
+}
+.widget-list-item {
   list-style: none;
   padding: 0;
 }
@@ -649,7 +669,7 @@ textarea {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  margin-left: 18px;
+  margin-left: 10px;
 }
 #recent-reply-18px .name-comment .name {
   font-size: 14px;
@@ -714,8 +734,8 @@ textarea {
   background-color: #fff;
   border-radius: 18px;
   padding: 18px;
-  /* padding-left: 36px !important;
-  padding-right: 36px !important; */
+  /*padding-left: 36px !important;*/
+  /*padding-right: 36px !important;*/
   margin-bottom: 30px;
 }
 .post-col-left,
@@ -729,8 +749,8 @@ textarea {
   margin-left: 18px;
   flex-direction: column;
   padding: 18px;
-  /* padding-left: 36px;
-  padding-right: 36px; */
+  /*padding-left: 36px;*/
+  /*padding-right: 36px;*/
   background: #fff;
   margin-bottom: 30px;
   border-radius: 18px;
@@ -1046,6 +1066,7 @@ img.alignright {
     justify-self: end;
     cursor: pointer;
     z-index: 1;
+    margin: 0 10px;
   }
   .burger-line1,
   .burger-line2,

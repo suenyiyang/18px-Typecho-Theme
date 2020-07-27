@@ -1,6 +1,6 @@
 <?php
 /**
- * 这是由 <a href="https://shaunyoung.cn/" target="_blank">小扬Shaun</a> 开发的一套简洁模板
+ * 这是由 <a href="https://shaunyoung.cn/" target="_blank">小扬Shaun</a> 开发的一套简洁模板。18px is a design!
  *
  * @package 拾捌px
  * @author 小扬Shaun

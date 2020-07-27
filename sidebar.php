@@ -7,7 +7,7 @@
     <?php if ($this->options->sidebarBlock && in_array('ShowBlogInfo', $this->options->sidebarBlock)): ?>
     <!-- 博主信息 -->
     <section id="blog-user-profile" class="widget <?php echo in_array('HideBlogInfo', $sidebarM) ? $hideClass : ''; ?>">
-        <h3 class="widget-title"><?php _e('博客信息');?></h3>
+        <h3 class="widget-title"><?php _e('关于博客');?></h3>
         <div class="widget-list personal-information">
             <div id="user">
                 <img src="<?php echo $this->options->logoUrl ? $this->options->logoUrl : $this->options->themeUrl('assets/img/avatar.png'); ?>" alt="<?php echo $this->options->nickname ? $this->options->nickname . '的头像' : $this->options->title . '的头像'; ?>" class="user-avatar">
@@ -19,16 +19,16 @@
             <div class="website-18px">
                 <?php Typecho_Widget::widget('Widget_Stat')->to($quantity);?>
                 <div class="info float-left border-right">
-                    <p class="quantity"><?php $quantity->publishedPostsNum();?></p>
-                    文章数
+                    📝
+                    <p class="quantity"><?php $quantity->publishedPostsNum();?>篇</p>
                 </div>
                 <div class="info float-left border-right">
-                    <p class="quantity"><?php $quantity->publishedCommentsNum();?></p>
-                    评论数
+                    💬
+                    <p class="quantity"><?php $quantity->publishedCommentsNum();?>条</p>
                 </div>
                 <div class="info float-left">
+                    🕘
                     <p class="quantity"><?php echo $this->options->birthday ? round((time() - strtotime($this->options->birthday)) / 86400, 0) . '天' : '0天'; ?></p>
-                    运行天数
                 </div>
             </div>
         </div>
@@ -43,8 +43,8 @@
             <?php $latestArticles = $this->widget('Widget_Contents_Post_Recent');?>
             <?php while ($latestArticles->next()): ?>
                 <a target="<?php $this->options->sidebarLinkOpen();?>" class="<?php echo $color['link']; ?>" href="<?php $latestArticles->permalink();?>">
-                    <!-- <?php $img = postImg($latestArticles);?> -->
-                    <!-- <img src="<?php echo $img ? $img : "{$this->options->siteUrl}usr/themes/18px/assets/img/18px.jpg"; ?>" alt=""> -->
+                     <?php $img = postImg($latestArticles);?> 
+                     <img src="<?php echo $img ? $img : "{$this->options->siteUrl}usr/themes/18px/assets/img/18px.jpg"; ?>" alt=""> 
                     <p><?php $latestArticles->title()?></p>
                 </a>
             <?php endwhile;?>
@@ -74,7 +74,7 @@
     </section>
     <?php endif;?>
 
-    <?php if (!empty($this->options->sidebarBlock) && in_array('ShowCategory', $this->options->sidebarBlock)): ?>
+    
 
     <!-- 标签云 -->
     <?php if ($this->options->sidebarBlock && in_array('ShowTag', $this->options->sidebarBlock)): ?>
@@ -93,12 +93,7 @@
         </section>
     <?php endif;?>
 
-    <!-- 分类 -->
-    <section class="widget" id="category-18px">
-		<h3 class="widget-title"><span><?php _e('分类');?></span></h3>
-        <?php $this->widget('Widget_Metas_Category_List')->listCategories('wrapClass=widget-list');?>
-	</section>
-    <?php endif;?>
+    
 
     <?php if (!empty($this->options->sidebarBlock) && in_array('ShowArchive', $this->options->sidebarBlock)): ?>
     <!-- 归档 -->
@@ -125,6 +120,14 @@
             <li><a href="<?php $this->options->feedUrl();?>" target="<?php $this->options->sidebarLinkOpen();?>"><?php _e('文章 RSS');?></a></li>
             <li><a href="<?php $this->options->commentsFeedUrl();?>" target="<?php $this->options->sidebarLinkOpen();?>"><?php _e('评论 RSS');?></a></li>
         </ul>
+	</section>
+    <?php endif;?>
+    
+    <!-- 分类 -->
+    <?php if (!empty($this->options->sidebarBlock) && in_array('ShowCategory', $this->options->sidebarBlock)): ?>
+    <section class="widget" id="category-18px">
+		<h3 class="widget-title"><span><?php _e('分类');?></span></h3>
+        <?php $this->widget('Widget_Metas_Category_List')->listCategories('wrapClass=widget-list');?>
 	</section>
     <?php endif;?>
 
