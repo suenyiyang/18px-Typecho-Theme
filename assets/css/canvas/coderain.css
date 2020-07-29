@@ -12,3 +12,6 @@ footer * {
 .page-navigator li {
   background-color: #eee;
 }
+.error-page {
+  color: #eee;
+}
