@@ -4,7 +4,7 @@
 ?>
 <?php $this->need('header.php');?>
 
-    <div class="col-mb-12 col-tb-8 col-tb-offset-2">
+    <div class="col-mb-12 col-tb-8 col-tb-offset-2 error-content">
 
         <div class="error-page">
             <h2 class="post-title">404 - <?php _e('页面没找到');?></h2>
