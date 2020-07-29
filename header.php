@@ -19,7 +19,7 @@
 ), '', ' - ');?><?php $this->options->title();?><?php echo $this->options->subTitle ? " - {$this->options->subTitle}" : ''; ?></title>
 
     <!-- 使用url函数转换相关路径 -->
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/style.css');?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/style11.css');?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl("assets/css/canvas/{$this->options->canvasBg}.css");?>">
     <?php if ($this->options->themeColor): ?>
         <style>
