@@ -444,6 +444,9 @@ textarea {
 .protected .text {
   width: 50%;
 }
+.page-nav {
+  grid-column: 1/3;
+}
 .page-navigator {
   list-style: none;
   margin: 25px 0;
@@ -453,6 +456,7 @@ textarea {
 .page-navigator li {
   display: inline-block;
   margin: 0 4px;
+  background-color: #eee;
 }
 .page-navigator a {
   display: inline-block;
@@ -461,12 +465,11 @@ textarea {
   line-height: 30px;
 }
 .page-navigator a:hover {
-  background: #eee;
   text-decoration: none;
+  color: var(--theme-color);
 }
 .page-navigator .current a {
-  color: #444;
-  background: #eee;
+  color: var(--theme-color);
 }
 #comments {
   padding-top: 15px;
@@ -489,7 +492,6 @@ textarea {
   background: #fff;
 }
 .comment-list li.comment-by-author {
-  
 }
 .comment-list li .comment-reply {
   text-align: right;
@@ -504,14 +506,14 @@ textarea {
   margin-bottom: 3px;
   color: #444;
 }
-.comment-by-author .comment-author::after{
-    content: "作者";
-    padding: 0 3px;
-    border-radius: 18px;
-    border: 1px solid #444;
-    font-size: 10px;
-    background-color: #444;
-    color: #fff;
+.comment-by-author .comment-author::after {
+  content: "作者";
+  padding: 0 3px;
+  border-radius: 18px;
+  border: 1px solid #444;
+  font-size: 10px;
+  background-color: #444;
+  color: #fff;
 }
 .comment-author .avatar {
   float: left;
@@ -521,7 +523,7 @@ textarea {
   transition: all ease-in-out 0.4s;
 }
 .comment-author .avatar:hover {
-    transform: rotate(540deg);
+  transform: rotate(540deg);
 }
 .comment-author cite {
   font-weight: bold;

@@ -23,3 +23,6 @@ footer * {
 .link {
   box-shadow: 0 5px 10px var(--box-shadow-dark);
 }
+.page-navigator li {
+  background-color: #444;
+}

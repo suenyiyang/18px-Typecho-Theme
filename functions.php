@@ -76,7 +76,7 @@ function themeConfig($form)
     $form->addInput($postLinkOpen);
 
     //  独立页友链
-    $pageLinks = new Typecho_Widget_Helper_Form_Element_Textarea('pageLinks', null, null, _t('独立页友情链接'), _t('独立页友情链接只会在友情链接的页面显示，需要 JSON 格式 数据。如果要使用独立页友情链接需要创建一个独立页面，把 自定义模板设置为 友情链接。如需查看详细说明可以访问：https://www.misterma.com/archives/819/。'));
+    $pageLinks = new Typecho_Widget_Helper_Form_Element_Textarea('pageLinks', null, null, _t('独立页友情链接'), _t('独立页友情链接只会在友情链接的页面显示，需要 JSON 格式 数据。请在创建独立页面时，把自定义模板设置为“友链”。如需查看详细说明可以访问：https://https://shaunyoung.cn/archives/70/。'));
     $form->addInput($pageLinks);
 }
 

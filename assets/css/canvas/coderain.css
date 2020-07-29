@@ -9,3 +9,6 @@ footer,
 footer * {
   color: #fff;
 }
+.page-navigator li {
+  background-color: #eee;
+}
