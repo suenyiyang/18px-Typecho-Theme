@@ -457,6 +457,7 @@ textarea {
   display: inline-block;
   margin: 0 4px;
   background-color: #eee;
+  border-radius: 18px;
 }
 .page-navigator a {
   display: inline-block;
