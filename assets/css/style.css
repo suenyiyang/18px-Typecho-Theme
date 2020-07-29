@@ -766,6 +766,9 @@ textarea {
   line-height: 1.5;
   text-align: center;
 }
+.error-content {
+  margin-left: 0 !important;
+}
 .error-page {
   margin-top: 100px;
   margin-bottom: 100px;
