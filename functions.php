@@ -129,9 +129,9 @@ function getPostView($archive)
 function themeInit($archive)
 {
     if ($archive->is('index')) {
-        $archive->parameter->pageSize = 6; // 自定义首页显示主题数
+        $archive->parameter->pageSize = 10; // 自定义首页显示主题数
     } elseif ($archive->is('archive')) {
-        $archive->parameter->pageSize = 6; // 自定义分类页显示主题数
+        $archive->parameter->pageSize = 10; // 自定义分类页显示主题数
     }
 }
 
